@@ -9,20 +9,13 @@ var expressionease = 100;
 var expressionintensity = 0.75;
 
   //interface values
-if (localStorage.localvalues) {
-  var initvalues = true;
-  var mouththreshold = Number(localStorage.mouththreshold) ;
-  var mouthboost = Number(localStorage.mouthboost) ;
-  var bodythreshold = Number(localStorage.bodythreshold) ;
-  var bodymotion = Number(localStorage.bodymotion) ;
-  var expression = Number(localStorage.expression) ;
-} else {
+
   var mouththreshold = 10;
   var mouthboost = 10;
   var bodythreshold = 10;
   var bodymotion = 10;
   var expression = 80;
-}
+
 
 // setup three-vrm
 
