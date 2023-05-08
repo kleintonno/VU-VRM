@@ -413,22 +413,22 @@ setTimeout(function () {
 })();
 
 // drag and drop + file handler
-window.addEventListener( 'dragover', function( event ) {
+/* window.addEventListener( 'dragover', function( event ) {
 event.preventDefault();
 } );
 
 window.addEventListener( 'drop', function( event ) {
 event.preventDefault();
-
+ */
 // read given file then convert it to blob url
-const files = event.dataTransfer.files;
+/* const files = event.dataTransfer.files;
 if ( !files ) { return; }
 const file = files[0];
 if ( !file ) { return; }
 const blob = new Blob( [ file ], { type: "application/octet-stream" } );
 const url = URL.createObjectURL( blob );
  load( url );
-} );
+} ); */
 
 
 // handle window resizes
@@ -447,83 +447,3 @@ function onWindowResize(){
 // interface handling
 
  var talktime = true;
-/*
-function interface() {
-
-  if (initvalues == true){
-  if (localStorage.localvalues) {
-    initvalues = false;
-    document.getElementById("mouththreshold").value = mouththreshold;
-    document.getElementById("mouthboost").value = mouthboost;
-    document.getElementById("bodythreshold").value = bodythreshold;
-    document.getElementById("bodymotion").value = bodymotion;
-    document.getElementById("expression").value = expression;
-  }}
-
-    mouththreshold = document.getElementById("mouththreshold").value;
-    mouthboost = document.getElementById("mouthboost").value;
-    bodythreshold = document.getElementById("bodythreshold").value;
-    bodymotion = document.getElementById("bodymotion").value;
-
-    expression = document.getElementById("expression").value;
-    expressionlimityay = (expression);
-    expressionlimitoof = (100 - expression); 
-    expressionlimityay = expressionlimityay/100;
-    expressionlimitoof = expressionlimitoof/100;
-    expressionlimityay = expressionlimityay*expressionintensity;
-    expressionlimitoof = expressionlimitoof*expressionintensity;    
-
-    console.log("Expression " + expressionyay + " yay / " + expressionoof + " oof");
-    console.log("Expression mix " + expressionlimityay + " yay / " + expressionlimitoof + " oof");
-
-    // store it too
-    localStorage.localvalues = 1;
-    localStorage.mouththreshold = mouththreshold;
-    localStorage.mouthboost = mouthboost;
-    localStorage.bodythreshold = bodythreshold;
-    localStorage.bodymotion = bodymotion;
-    localStorage.expression = expression;
-
-} */
-
-// click to dismiss non-vrm divs
-/*   function hideinterface() {
-
-  var a = document.getElementById("backplate");
-  var b = document.getElementById("interface");
-  var x = document.getElementById("infobar");
-  var y = document.getElementById("credits");
-  a.style.display = "none";
-  b.style.display = "none";
-  x.style.display = "none";
-  y.style.display = "none";
-
-  } */
-
-// click to dismiss non-interface divs
-/* function hideinfo() {
-
-  var a = document.getElementById("backplate");
-  var x = document.getElementById("infobar");
-  var y = document.getElementById("credits");
-  a.style.display = "none";
-  x.style.display = "none";
-  y.style.display = "none";
-
-  } */
-
-// load file from user picker
- /*  function dofile(){
-  var file = document.querySelector('input[type=file]').files[0];
-  if ( !file ) { return; }
-  const blob = new Blob( [ file ], { type: "application/octet-stream" } );
-  const url = URL.createObjectURL( blob );
-   load( url );
-  } */
-// end
-
-// wait to trigger interface and load init values
-
-/* setTimeout(() => {  interface(); }, 500);
- */
-//ok
