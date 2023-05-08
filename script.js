@@ -450,7 +450,7 @@ var talktime = true;
 
 function interface() {
 
-  if (initvalues == true){
+  /* if (initvalues == true){
   if (localStorage.localvalues) {
     initvalues = false;
     document.getElementById("mouththreshold").value = mouththreshold;
@@ -482,7 +482,7 @@ function interface() {
     localStorage.mouthboost = mouthboost;
     localStorage.bodythreshold = bodythreshold;
     localStorage.bodymotion = bodymotion;
-    localStorage.expression = expression;
+    localStorage.expression = expression; */
 
 }
 
