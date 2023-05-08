@@ -446,11 +446,11 @@ function onWindowResize(){
 }
 // interface handling
 
-var talktime = true;
+/* var talktime = true;
 
 function interface() {
 
-  /* if (initvalues == true){
+  if (initvalues == true){
   if (localStorage.localvalues) {
     initvalues = false;
     document.getElementById("mouththreshold").value = mouththreshold;
@@ -482,12 +482,12 @@ function interface() {
     localStorage.mouthboost = mouthboost;
     localStorage.bodythreshold = bodythreshold;
     localStorage.bodymotion = bodymotion;
-    localStorage.expression = expression; */
+    localStorage.expression = expression;
 
-}
+} */
 
 // click to dismiss non-vrm divs
-  function hideinterface() {
+/*   function hideinterface() {
 
   var a = document.getElementById("backplate");
   var b = document.getElementById("interface");
@@ -498,10 +498,10 @@ function interface() {
   x.style.display = "none";
   y.style.display = "none";
 
-  }
+  } */
 
 // click to dismiss non-interface divs
-function hideinfo() {
+/* function hideinfo() {
 
   var a = document.getElementById("backplate");
   var x = document.getElementById("infobar");
@@ -510,20 +510,20 @@ function hideinfo() {
   x.style.display = "none";
   y.style.display = "none";
 
-  }
+  } */
 
 // load file from user picker
-  function dofile(){
+ /*  function dofile(){
   var file = document.querySelector('input[type=file]').files[0];
   if ( !file ) { return; }
   const blob = new Blob( [ file ], { type: "application/octet-stream" } );
   const url = URL.createObjectURL( blob );
    load( url );
-  }
+  } */
 // end
 
 // wait to trigger interface and load init values
 
-setTimeout(() => {  interface(); }, 500);
-
+/* setTimeout(() => {  interface(); }, 500);
+ */
 //ok
