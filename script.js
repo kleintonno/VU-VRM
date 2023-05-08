@@ -402,7 +402,6 @@ currentVrm.blendShapeProxy.setValue(
 }
 
 
-
 // loop blink timing
 (function loop() {
 var rand = Math.round(Math.random() * 10000) + 1000;
@@ -411,28 +410,6 @@ setTimeout(function () {
   loop();
 }, rand);
 })();
-
-// drag and drop + file handler
-/* window.addEventListener( 'dragover', function( event ) {
-event.preventDefault();
-} );
-
-window.addEventListener( 'drop', function( event ) {
-event.preventDefault();
- */
-// read given file then convert it to blob url
-/* const files = event.dataTransfer.files;
-if ( !files ) { return; }
-const file = files[0];
-if ( !file ) { return; }
-const blob = new Blob( [ file ], { type: "application/octet-stream" } );
-const url = URL.createObjectURL( blob );
- load( url );
-} ); */
-
-
-// handle window resizes
-
 
 window.addEventListener( 'resize', onWindowResize, false );
 
