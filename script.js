@@ -446,8 +446,8 @@ function onWindowResize(){
 }
 // interface handling
 
-/* var talktime = true;
-
+ var talktime = true;
+/*
 function interface() {
 
   if (initvalues == true){
