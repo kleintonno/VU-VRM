@@ -213,7 +213,7 @@ navigator.mediaDevices
       // useful for mouth shape variance
       
       // move the interface slider
-              document.getElementById("inputlevel").value = inputvolume;
+      //        document.getElementById("inputlevel").value = inputvolume;
 
 
 
