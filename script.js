@@ -149,8 +149,7 @@ vrm.springBoneManager.reset();
   }
 
 // beware of CORS errors when using this locally. If you can't https, import the required libraries.
-load( 'assets\avatar.vrm' );
-
+load( 'assets/avatar.vrm' );
 // grid / axis helpers
 //			const gridHelper = new THREE.GridHelper( 10, 10 );
 //			scene.add( gridHelper );
