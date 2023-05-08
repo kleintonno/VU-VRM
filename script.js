@@ -27,12 +27,12 @@ document.body.appendChild(renderer.domElement);
 
 // camera
 const camera = new THREE.PerspectiveCamera(30.0, window.innerWidth / window.innerHeight, 0.1, 20.0);
-camera.position.set(0.0, 2.2, 1.00);
+camera.position.set(0.0, 2, 1.00);
 
 // camera controls
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.screenSpacePanning = true;
-controls.target.set(0.0, 2.2, 0.0);
+controls.target.set(0.0, 1.8, 0.0);
 controls.update();
 
 // scene
